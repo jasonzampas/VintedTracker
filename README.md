@@ -60,3 +60,7 @@ To get the IDs of the channels:
        "brand_name": 1234567890,
        "another_brand_name": 0987654321
    }
+
+# 📃 License:
+
+This project is licensed under the MIT License.
