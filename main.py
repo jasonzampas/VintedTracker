@@ -96,15 +96,9 @@ async def criteria(interaction: discord.Interaction, price: float):
 
 async def start():
     with open("token.txt", "r") as file:
-        token = file
+        token = file.read().strip()
 
     await bot.start(token)
 
 if __name__ == "__main__":
-    import sys
-    if sys.platform.startswith("win") and hasattr(asyncio, "WindowsSelectorEventLoopPolicy"):
-        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
-    loop = asyncio.get_event_loop()
-    loop.create_task(start())
-    loop.run_forever()
+    asyncio.run(start())
