@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 3. Enable all `Privileged Gateway Intents` in the `Bot` section.
 
-4. Invite the bot to your server with the link: [https://discord.com/oauth2/authorize client_id=[YOUR BOT'S APPLICATION ID]&permissions=8&scope=bot]()
+4. Invite the bot to your server with the link: [https://discord.com/api/oauth2/authorize?client_id=[YOUR BOT'S ID]&permissions=8&scope=bot%20applications.commands]()
 
 5. In `Bot`, press `Reset Token` to retrieve your bot's token
 
